@@ -105,7 +105,7 @@ class GlossaryNodeEntity implements Entity<GlossaryNode> {
             component: SidebarTagsSection,
             properties: {
                 hasTags: true,
-                hasTerms: true,
+                hasTerms: false,
             },
         },
     ];

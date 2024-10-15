@@ -233,7 +233,7 @@ export const SearchResults = ({
                                     viewUrn={viewUrn}
                                     setShowSelectMode={setIsSelectMode}
                                     totalResults={totalResults}
-                                />
+                               />
                             </SearchMenuContainer>
                         </PaginationInfoContainer>
                         {isSelectMode && (

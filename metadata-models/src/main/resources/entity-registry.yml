@@ -274,14 +274,6 @@ entities:
       - structuredProperties
       - forms
       - testResults
-      - tagKey
-      - tagProperties
-      - tagKey
-      - tagProperties
-      - tagKey
-      - tagProperties
-      - tagKey
-      - tagProperties
   - name: glossaryNode
     category: core
     keyAspect: glossaryNodeKey

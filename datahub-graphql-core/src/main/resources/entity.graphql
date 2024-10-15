@@ -2425,6 +2425,7 @@ type GlossaryNode implements Entity {
     Tags used for searching the data platform instance
     """
     tags: GlobalTags
+    globalTags: GlobalTags
 }
 
 """

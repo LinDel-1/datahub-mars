@@ -82,7 +82,7 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
                 hideBrowseBar
                 tabs={[
                     {
-                        name: 'Documentation!',
+                        name: 'Documentation',
                         component: DocumentationTab,
                     },
                     {
@@ -116,7 +116,6 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
             />
         );
     };
-
     getSidebarSections = () => [
         {
             component: SidebarAboutSection,
@@ -128,6 +127,7 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
             component: SidebarTagsSection,
             properties: {
                 hasTags: true,
+		hasTerms: false,
             },
         },
         {
@@ -141,7 +141,6 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
     getOverridePropertiesFromEntity = (glossaryTerm?: GlossaryTerm | null): GenericEntityProperties => {
         return {
             customProperties: glossaryTerm?.properties?.customProperties,
-            globalTags: glossaryTerm?.globalTags,
         };
     };
 
@@ -185,7 +184,7 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
             EntityCapabilityType.OWNERS,
             EntityCapabilityType.DEPRECATION,
             EntityCapabilityType.SOFT_DELETE,
-            EntityCapabilityType.TAGS,
+            EntityCapabilityType.TAGS
         ]);
     };
 }
